@@ -9,8 +9,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Baby Names',
-      home: const MyHomePage(title: 'Baby Name Votes'),
+      title: 'Mood meter',
+      home: const MyHomePage(title: 'Mood meter'),
     );
   }
 }
@@ -19,6 +19,14 @@ class MyHomePage extends StatelessWidget {
   const MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
+
+  static const statuses = {
+    'laugh': '😀',
+    'smile': '🙂',
+    'sad': '😕',
+    'angry': '😤',
+    'terrified': '😱'
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -31,10 +39,24 @@ class MyHomePage extends StatelessWidget {
             return new ListView.builder(
                 itemCount: snapshot.data.documents.length,
                 padding: const EdgeInsets.only(top: 10.0),
-                itemExtent: 25.0,
                 itemBuilder: (context, index) {
                   DocumentSnapshot ds = snapshot.data.documents[index];
-                  return new Text(" ${ds['name']} ${ds['teamId']}");
+                  var lastMood = ds['moodHistory'][0]['value'];
+                  print(lastMood);
+                  return new Card(
+                    child: new Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        new ListTile(
+                          leading: new Text(
+                              lastMood == null ? statuses['laugh'] : statuses[lastMood],
+                              style: new TextStyle(fontSize: 36.0)
+                          ),
+                          title: new Text(ds['name']),
+                        ),
+                      ],
+                    ),
+                  );
                 }
             );
           }),
