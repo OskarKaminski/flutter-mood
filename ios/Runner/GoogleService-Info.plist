@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>507771212104-p9toa926rjnc5nds5h053vs1ve47mvhc.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.507771212104-p9toa926rjnc5nds5h053vs1ve47mvhc</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDQjdH-vp8QjgOELXyTYBCg__zfA9KozrA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>507771212104</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.mood</string>
+	<key>PROJECT_ID</key>
+	<string>mood-meter-4ef84</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mood-meter-4ef84.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:507771212104:ios:34c9889baeb8b459</string>
+	<key>DATABASE_URL</key>
+	<string>https://mood-meter-4ef84.firebaseio.com</string>
+</dict>
+</plist>
